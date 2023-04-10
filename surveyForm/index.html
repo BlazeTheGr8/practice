@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <title>Survery Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a short survey to gather random data.</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Name" required/></label> 
+    <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="name@domain.com" required/></label>
+    <label for="number" id="number-label">Number: <input type="number" id="number" min="0" max="9999999999" placeholder="1234567890" required/>
+    <label for="dropdown">Favorite color: <select id="dropdown">
+      <option>(select one)</option>
+      <option>Blue</option>
+      <option>Red</option>
+    </select></label>
+  <label for="sex">
+    Sex: <input type="radio" name="sex" value="yes"> Yes
+    <input type="radio" name="sex" value="no">No</label>
+<label>Select Fav Feelings
+  <input type="checkbox" name="happy" value="happy"> Happy
+  <input type="checkbox" name="sad" value="sad"> Sad
+</label>
+<label for="comments">Comments: <textarea id="comments" placeholder="Comment..."></textarea></label>
+<input type="submit" value="Submit" id='submit'>
+  </form>
+  </body>
+</html>
